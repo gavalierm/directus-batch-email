@@ -1,0 +1,10 @@
+export default {
+  id: 'batch-email',
+  name: 'Batch Email Notifications',
+  icon: 'mail',
+  description: 'Query recent changes and send batched email notifications to band members',
+  overview: () => [
+    { label: 'Mode', text: 'Cron batch (15 min)' },
+  ],
+  options: [],
+};

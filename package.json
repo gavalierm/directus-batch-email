@@ -1,0 +1,25 @@
+{
+  "name": "directus-operation-batch-email",
+  "version": "1.0.0",
+  "description": "Send batched email notifications from Directus Flows",
+  "type": "module",
+  "directus:extension": {
+    "type": "operation",
+    "path": {
+      "app": "dist/app.js",
+      "api": "dist/api.js"
+    },
+    "source": {
+      "app": "src/app.js",
+      "api": "src/api.js"
+    },
+    "host": "^11.0.0"
+  },
+  "devDependencies": {
+    "@directus/extensions-sdk": "^17.1.0"
+  },
+  "scripts": {
+    "build": "npx directus-extension build",
+    "dev": "npx directus-extension build --watch"
+  }
+}
