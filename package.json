@@ -1,6 +1,6 @@
 {
   "name": "directus-operation-batch-email",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Send batched email notifications from Directus Flows",
   "type": "module",
   "directus:extension": {
@@ -19,6 +19,7 @@
     "@directus/extensions-sdk": "^17.1.0"
   },
   "scripts": {
+    "prebuild": "node scripts/check-hooks-installed.js",
     "build": "npx directus-extension build",
     "dev": "npx directus-extension build --watch"
   }
